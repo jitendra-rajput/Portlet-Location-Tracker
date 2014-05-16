@@ -5,6 +5,9 @@ Portlet Location Tracker - Find out where your portlet is placed.
 
 This app will help developers as well as end user to locate the portlets placed on different pages.
 App will search in entire portal for the portlet you are looking for and display possible results.
+For big portal its difficult for Developers/QA and end users to locate the page. This application will help theme to track where portlet is placed . 
+
+
 
 Here is the description about the functionalits available in Location Tracker Portlet
 
@@ -14,6 +17,7 @@ Here is the description about the functionalits available in Location Tracker Po
 - Entire list of portlet will be displayed using dropdown
 - User can search for page locations by selecting any of the portlets from list.
 - User can go to actual page as well from results it self.
+- In results application will display more information about page (private or public page). It will also display group name in which page belongs.
 
 
 2) Export to Excel 
