@@ -1,5 +1,6 @@
-Portlet-Location-Tracker (LR 6.1 GA 2 and LR 6.2 GA1)
+Portlet-Location-Tracker 
 ========================
+<b>Steps for Liferay 6.1 GA 2 and Liferay 6.2 GA1</b>
 
 Portlet Location Tracker - Find out where your portlet is placed.
 
