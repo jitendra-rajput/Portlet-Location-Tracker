@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="location_tracker_report" language="groovy" pageWidth="800" pageHeight="842" columnWidth="760" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2dee2796-a28a-4e03-86ed-51801e8858ef">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="group" class="java.lang.String"/>
+	<field name="friendlyURL" class="java.lang.String"/>
+	<field name="privateLayout" class="java.lang.Boolean"/>
+	<field name="pageUrl" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="68" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="48" width="133" height="20" uuid="54042655-6cb4-4574-9c6b-e5ec7536606d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Page Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="48" width="131" height="20" uuid="d9a1581d-df6a-4926-9c55-3360a0590ac9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Group]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="264" y="48" width="126" height="20" uuid="23d964c7-f10f-4419-bbfc-d1c5203742eb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Friendly URL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="48" width="100" height="20" uuid="d481e6fc-c20e-481b-9804-93f52c1dd592"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Is Private Layout]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="48" width="270" height="20" uuid="439fd874-5ff7-4815-b07f-d4c61b0e9836"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Page URL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-22" y="48" width="22" height="20" uuid="7d437ece-b5f3-4248-a076-a9088a01a480"/>
+				<text><![CDATA[No]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="133" height="20" uuid="8112730c-ba3e-43fd-941e-eca03eb6d412"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="133" y="0" width="131" height="20" uuid="b68ea62b-d631-40a5-8736-0cebf3392167"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{group}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="264" y="0" width="126" height="20" uuid="3303ce36-8a32-4875-9448-b138b3b8ab0d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{friendlyURL}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="390" y="0" width="100" height="20" uuid="36929a90-11b1-4b04-a83d-1b341c5df440"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{privateLayout}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="490" y="0" width="270" height="20" uuid="5ec97efb-331a-48c3-a048-a9e5b10c1978"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pageUrl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-22" y="0" width="22" height="20" uuid="3d073673-b0af-41df-9270-bc547b930a2b"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
