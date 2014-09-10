@@ -26,3 +26,8 @@ Here is the description about the functionalits available in Location Tracker Po
 - User can export search results in to Excel file . For Export to Excel application uses Jasper report.
 
 
+<b>v1.1</b>
+
+- In v1.1 release of this application new functionalities has been added.
+- Action menu has been introduced to couple multiple actions.
+- User can now remove any portlet from page using this application.
